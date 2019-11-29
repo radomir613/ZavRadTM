@@ -1,0 +1,10 @@
+<?php
+session_start();
+$pri_kor = $_SESSION['korisnicko_ime'];
+$log = $_SESSION['tim_lider'];
+if ($log != "log"){
+    header ("Location: logovanje.php");
+}
+$msg = "";
+?>
+
